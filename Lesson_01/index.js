@@ -227,20 +227,20 @@
 
 // Виконавши математичні операції та застосувавши шаблоні рядки виведи в консоль кількість та загальну вартість за кожен продукт.
 
-const apple = "🍎";
+// const apple = "🍎";
 
-const appleQuantity = 8;
+// const appleQuantity = 8;
 
-const applePrice = 34;
+// const applePrice = 34;
 
 // const appleMessage = `${apple} total cost ${appleQuantity * applePrice}`;
 // console.log(appleMessage);
 
-const cherry = "🍒";
+// const cherry = "🍒";
 
-const cherryQuantity = 3;
+// const cherryQuantity = 3;
 
-const cherryPrice = 72;
+// const cherryPrice = 72;
 
 // const cherryMessage = `${cherry} total cost ${cherryQuantity * cherryPrice}`;
 
@@ -261,66 +261,43 @@ const cherryPrice = 72;
 // 450 покаже 07:30
 // 1441 покаже 24:01
 
-function getTime(minutes) {
-  const hours = Math.floor(minutes / 60);
-  const remainingMinutes = minutes % 60;
+// function getTime(minutes) {
+//   const hours = Math.floor(minutes / 60);
+//   const remainingMinutes = minutes % 60;
 
-  return `${hours.toString().padStart(2, "0")}:${remainingMinutes
-    .toString()
-    .padStart(2, "0")}`;
-}
-console.log(getTime(70));
-console.log(getTime(450));
-console.log(getTime(1441));
+//   return `${hours.toString().padStart(2, "0")}:${remainingMinutes
+//     .toString()
+//     .padStart(2, "0")}`;
+// }
+// console.log(getTime(70));
+// console.log(getTime(450));
+// console.log(getTime(1441));
 
 // Task - 3
 
-
 // Виконай рефакторинг коду щоб уникнути помилок
 
-// const userName = 'Harry';
+// const userName = "Harry";
 // const message = `Hello my name is ${userName}`;
 // console.log(message);
 
 // const delivery = 25;
 // const price = 190;
-// const message = `Total purchase, price ${delivery  + price}`;
+// const message = `Total purchase, price ${delivery + price}`;
 // console.log(message);
-
 
 // const x = 8;
 // const y = 5;
 
-
-
-// console.log(x - y); // 3 
+// console.log(x - y); // 3
 // console.log(y - x);
 // Питання?  - чи можна ставити y - на першому місці у console.log(y - x); // 3 ? чи тільки як іде за потоком ( з гори до низу?)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 function convertCelsiusToFahrenheit(celsius) {
   // Формула для переведення температури з градусів Цельсія у градуси Фаренгейта
-  const fahrenheit = celsius * 9/5 + 32;
+  const fahrenheit = (celsius * 9) / 5 + 32;
   return fahrenheit;
 }
-
-
-
-
-
-
 
 function getLastDigit(number) {
   // Використовуємо метод Math.abs() для отримання модуля числа, щоб позбутися від'ємного знаку
